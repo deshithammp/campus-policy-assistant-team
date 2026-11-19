@@ -1,0 +1,321 @@
+[
+  {
+    "id": "Q01",
+    "question": "Can I repeat a failed module? How do I register?",
+    "expected_answer": "Repeat the module at the next scheduled offering after the examination board confirms the result. Submit the repeat registration form in the Student Portal and attach the applicable payment receipt.",
+    "contexts": [
+      {
+        "document": "assessment-regulations.pdf",
+        "page": 1,
+        "phrase": "next scheduled offering"
+      },
+      {
+        "document": "student-registration.pdf",
+        "page": 1,
+        "phrase": "repeat registration form"
+      }
+    ],
+    "required_facts": [
+      [
+        "next scheduled offering"
+      ],
+      [
+        "examination board"
+      ],
+      [
+        "student portal"
+      ],
+      [
+        "payment receipt"
+      ]
+    ]
+  },
+  {
+    "id": "Q02",
+    "question": "How do I register for a repeat module?",
+    "expected_answer": "Submit the repeat registration form through the Student Portal and attach the applicable payment receipt.",
+    "contexts": [
+      {
+        "document": "student-registration.pdf",
+        "page": 1,
+        "phrase": "repeat registration form"
+      }
+    ],
+    "required_facts": [
+      [
+        "repeat registration form"
+      ],
+      [
+        "student portal"
+      ],
+      [
+        "payment receipt"
+      ]
+    ]
+  },
+  {
+    "id": "Q03",
+    "question": "When does repeat registration close?",
+    "expected_answer": "It closes seven calendar days before the teaching period begins.",
+    "contexts": [
+      {
+        "document": "student-registration.pdf",
+        "page": 2,
+        "phrase": "seven calendar days"
+      }
+    ],
+    "required_facts": [
+      [
+        "seven calendar days"
+      ],
+      [
+        "before the teaching period"
+      ]
+    ]
+  },
+  {
+    "id": "Q04",
+    "question": "If I miss an exam for medical reasons, what must I submit?",
+    "expected_answer": "Submit the medical absence form and a medical certificate within three working days.",
+    "contexts": [
+      {
+        "document": "assessment-regulations.pdf",
+        "page": 2,
+        "phrase": "medical absence form"
+      }
+    ],
+    "required_facts": [
+      [
+        "medical absence form"
+      ],
+      [
+        "medical certificate"
+      ],
+      [
+        "three working days"
+      ]
+    ]
+  },
+  {
+    "id": "Q05",
+    "question": "When can I request a mark review?",
+    "expected_answer": "Within five working days of publication of the provisional result.",
+    "contexts": [
+      {
+        "document": "assessment-regulations.pdf",
+        "page": 3,
+        "phrase": "five working days"
+      }
+    ],
+    "required_facts": [
+      [
+        "five working days"
+      ],
+      [
+        "provisional result"
+      ]
+    ]
+  },
+  {
+    "id": "Q06",
+    "question": "Where do I submit an academic appeal?",
+    "expected_answer": "Submit it to the Academic Appeals Office after the mark review decision.",
+    "contexts": [
+      {
+        "document": "assessment-regulations.pdf",
+        "page": 4,
+        "phrase": "academic appeals office"
+      }
+    ],
+    "required_facts": [
+      [
+        "academic appeals office"
+      ],
+      [
+        "mark review decision"
+      ]
+    ]
+  },
+  {
+    "id": "Q07",
+    "question": "How do I withdraw from a module without penalty?",
+    "expected_answer": "Submit the module withdrawal form during the first two teaching weeks.",
+    "contexts": [
+      {
+        "document": "student-registration.pdf",
+        "page": 3,
+        "phrase": "module withdrawal form"
+      }
+    ],
+    "required_facts": [
+      [
+        "module withdrawal form"
+      ],
+      [
+        "first two teaching weeks"
+      ]
+    ]
+  },
+  {
+    "id": "Q08",
+    "question": "What do I do if I have a timetable clash?",
+    "expected_answer": "Email the Programme Office and include both module codes and the affected class times.",
+    "contexts": [
+      {
+        "document": "student-registration.pdf",
+        "page": 4,
+        "phrase": "timetable clash"
+      }
+    ],
+    "required_facts": [
+      [
+        "programme office"
+      ],
+      [
+        "module codes"
+      ],
+      [
+        "affected class times"
+      ]
+    ]
+  },
+  {
+    "id": "Q09",
+    "question": "Who do I contact for exam accommodations?",
+    "expected_answer": "Contact the Accessibility Office with supporting documentation at least four weeks before the exam period.",
+    "contexts": [
+      {
+        "document": "student-support.pdf",
+        "page": 1,
+        "phrase": "accessibility office"
+      }
+    ],
+    "required_facts": [
+      [
+        "accessibility office"
+      ],
+      [
+        "supporting documentation"
+      ],
+      [
+        "four weeks"
+      ]
+    ]
+  },
+  {
+    "id": "Q10",
+    "question": "Where can I request a replacement student ID card?",
+    "expected_answer": "At the Student Services Desk with a valid photo ID and a completed card replacement form.",
+    "contexts": [
+      {
+        "document": "student-support.pdf",
+        "page": 2,
+        "phrase": "student services desk"
+      }
+    ],
+    "required_facts": [
+      [
+        "student services desk"
+      ],
+      [
+        "photo id"
+      ],
+      [
+        "card replacement form"
+      ]
+    ]
+  },
+  {
+    "id": "Q11",
+    "question": "What is the processing time for an enrollment letter?",
+    "expected_answer": "The standard processing time is two working days.",
+    "contexts": [
+      {
+        "document": "student-support.pdf",
+        "page": 3,
+        "phrase": "two working days"
+      }
+    ],
+    "required_facts": [
+      [
+        "two working days"
+      ]
+    ]
+  },
+  {
+    "id": "Q12",
+    "question": "Can I request a parking permit for a motorcycle?",
+    "expected_answer": "The indexed documents do not cover motorcycle parking permits.",
+    "contexts": [],
+    "required_facts": []
+  },
+  {
+    "id": "Q13",
+    "question": "Can I retake a failed module, and what does the repeat module cost?",
+    "expected_answer": "Repeat at the next scheduled offering after the examination board confirms the result. The exact fee is not in the PDFs.",
+    "contexts": [
+      {
+        "document": "assessment-regulations.pdf",
+        "page": 1,
+        "phrase": "next scheduled offering"
+      }
+    ],
+    "required_facts": [
+      [
+        "next scheduled offering"
+      ],
+      [
+        "examination board"
+      ]
+    ],
+    "expected_unanswered": [
+      "what does the repeat module cost"
+    ]
+  },
+  {
+    "id": "Q14",
+    "question": "If two classes overlap, who should I notify?",
+    "expected_answer": "Email the Programme Office with both module codes and the affected class times.",
+    "contexts": [
+      {
+        "document": "student-registration.pdf",
+        "page": 4,
+        "phrase": "timetable clash"
+      }
+    ],
+    "required_facts": [
+      [
+        "programme office"
+      ],
+      [
+        "module codes"
+      ],
+      [
+        "affected class times"
+      ]
+    ]
+  },
+  {
+    "id": "Q15",
+    "question": "How do I order a transcript and how long does it take to process the transcript?",
+    "expected_answer": "Request it using the transcript request form in the Student Records Portal. Processing takes five working days.",
+    "contexts": [
+      {
+        "document": "student-support.pdf",
+        "page": 4,
+        "phrase": "transcript request form"
+      }
+    ],
+    "required_facts": [
+      [
+        "transcript request form"
+      ],
+      [
+        "student records portal"
+      ],
+      [
+        "five working days"
+      ]
+    ]
+  }
+]

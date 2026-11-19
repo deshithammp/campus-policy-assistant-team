@@ -1,0 +1,11 @@
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.DS_Store
+runtime/
+data/nsbm/*.pdf
+docs/nsbm-baseline.json
+docs/nsbm-*-results.json
+docs/nsbm-challenge-*.json
+docs/CampusPolicyReport.pdf
