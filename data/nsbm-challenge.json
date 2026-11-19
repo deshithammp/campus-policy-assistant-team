@@ -1,0 +1,180 @@
+[
+  {
+    "id": "H01",
+    "question": "How late may an examination candidate enter the exam room?",
+    "expected_answer": "The regulations generally allow entry up to 30 minutes after the official start.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 2,
+        "phrase": "up to thirty minutes"
+      }
+    ],
+    "required_facts": [
+      [
+        "thirty minutes"
+      ]
+    ]
+  },
+  {
+    "id": "H02",
+    "question": "What must I do at the end of an examination when the invigilator tells me to stop?",
+    "expected_answer": "Stop writing immediately when instructed.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 5,
+        "phrase": "stop writing immediately"
+      }
+    ],
+    "required_facts": [
+      [
+        "stop writing immediately"
+      ]
+    ]
+  },
+  {
+    "id": "H03",
+    "question": "Can I take rough work papers out of the examination room?",
+    "expected_answer": "Rough work and other official exam material must remain in the room.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 4,
+        "phrase": "shall not remove any script"
+      }
+    ],
+    "required_facts": [
+      [
+        "shall not remove"
+      ],
+      [
+        "rough work"
+      ]
+    ]
+  },
+  {
+    "id": "H04",
+    "question": "Which documents do I bring to each examination?",
+    "expected_answer": "Bring your identity card and admission card.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 2,
+        "phrase": "identity card and the admission card"
+      }
+    ],
+    "required_facts": [
+      [
+        "identity card"
+      ],
+      [
+        "admission card"
+      ]
+    ]
+  },
+  {
+    "id": "H05",
+    "question": "Does poor internet connectivity qualify under the EC technical issues list?",
+    "expected_answer": "The EC guide lists poor internet connectivity among technical problems that will not be approved.",
+    "contexts": [
+      {
+        "document": "extenuating-circumstances.pdf",
+        "page": 3,
+        "phrase": "poor internet connectivity"
+      }
+    ],
+    "required_facts": [
+      [
+        "poor internet connectivity"
+      ],
+      [
+        "not be approved"
+      ]
+    ]
+  },
+  {
+    "id": "H06",
+    "question": "Which board reviews an Extenuating Circumstances claim?",
+    "expected_answer": "The EC Board reviews claims.",
+    "contexts": [
+      {
+        "document": "extenuating-circumstances.pdf",
+        "page": 2,
+        "phrase": "claims are reviewed by the ec board"
+      }
+    ],
+    "required_facts": [
+      [
+        "ec board"
+      ]
+    ]
+  },
+  {
+    "id": "H07",
+    "question": "Do the EC guidelines accept OPD medical certificates?",
+    "expected_answer": "The document says OPD medical certificates are not accepted.",
+    "contexts": [
+      {
+        "document": "extenuating-circumstances.pdf",
+        "page": 2,
+        "phrase": "opd medical certificates"
+      }
+    ],
+    "required_facts": [
+      [
+        "opd medical certificates"
+      ],
+      [
+        "not accepted"
+      ]
+    ]
+  },
+  {
+    "id": "H08",
+    "question": "Which recovery strategy options are listed on the repeat registration form?",
+    "expected_answer": "Select Coursework or Exam plus Coursework.",
+    "contexts": [
+      {
+        "document": "repeat-coursework.pdf",
+        "page": 1,
+        "phrase": "coursework or exam coursework option"
+      }
+    ],
+    "required_facts": [
+      [
+        "exam coursework"
+      ]
+    ]
+  },
+  {
+    "id": "H09",
+    "question": "What details about the module and lecturer go on the repeat assignment submission form?",
+    "expected_answer": "Enter the module code, module name and lecturer name.",
+    "contexts": [
+      {
+        "document": "repeat-coursework.pdf",
+        "page": 4,
+        "phrase": "correct module code"
+      }
+    ],
+    "required_facts": [
+      [
+        "module code"
+      ],
+      [
+        "module name"
+      ],
+      [
+        "lecturer name"
+      ]
+    ]
+  },
+  {
+    "id": "H10",
+    "question": "Can I book an overnight guest room in the student residence?",
+    "expected_answer": "Housing reservations are not covered by the corpus.",
+    "contexts": [],
+    "required_facts": []
+  }
+]
