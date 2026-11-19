@@ -1,0 +1,28 @@
+name: Import the existing coursework history
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/import-project.yml']
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Import and verify the source tree
+        shell: bash
+        run: |
+          test "$(git ls-tree --name-only HEAD | wc -l)" -eq 3
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git bundle verify campus-policy-source.bundle
+          git fetch ./campus-policy-source.bundle refs/heads/main:refs/remotes/import/main
+          git merge --allow-unrelated-histories --strategy=ours --no-commit refs/remotes/import/main
+          git read-tree --reset -u refs/remotes/import/main
+          git commit -m 'Import Campus Policy Assistant source and history'
+          test "$(git rev-parse HEAD^{tree})" = "$(git rev-parse refs/remotes/import/main^{tree})"
+          git push origin HEAD:main
