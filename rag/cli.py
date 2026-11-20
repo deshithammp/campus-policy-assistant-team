@@ -67,6 +67,10 @@ def ingest(path, store, embedder):
         files = [path] if path.is_file() and path.suffix.lower() == '.pdf' else []
     if not files:
         raise ValueError(f'No PDF files found at {path}.')
+    ingest_files(files, store, embedder)
+
+
+def ingest_files(files, store, embedder):
     ingestor = PDFIngestor()
     chunks = []
     for pdf in files:

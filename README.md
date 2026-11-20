@@ -2,6 +2,28 @@
 
 An explainable agentic RAG system for DS205.3. It indexes academic PDFs, ranks passages with hybrid retrieval, searches again when a question has missing evidence, and returns cited answers. The NSBM corpus covers examination conduct, extenuating circumstances and repeat coursework.
 
+## Browser interface
+
+On a Mac, double-click **StartWeb.command** in the extracted project folder. From the VS Code terminal, run:
+
+    ./StartWeb.command
+
+The launcher opens [http://127.0.0.1:8765](http://127.0.0.1:8765). Keep the terminal running while using the app. Press Ctrl+C there to stop it. On other platforms, install `requirements.txt` in your Python environment and run `python -m rag.web --open`. If port 8765 is occupied, the launcher selects a free port and prints the new URL.
+
+Ask your own question or choose an example. Click a citation to read the supporting passage and open the cited PDF page or the full document. Offline mode works locally with the PDFs. Select Ollama in the top bar to use the configured local models. The web app uses the NSBM collection when all three source PDFs are present, and labels the fictional sample collection otherwise. Web indexes and question runs are stored locally under `runtime/`. Restart the launcher after changing the source files.
+
+### Manage source PDFs as admin
+
+Set your local admin password once from the project terminal:
+
+    ./StartWeb.command --set-admin-password
+
+On other platforms use `python -m rag.web --set-admin-password` from the configured Python environment. Open **Admin** in the browser, sign in as `admin`, then select and upload one or more PDFs. Uploads can be up to 20 MB and 300 pages per file, and must contain searchable text. Uploads are stored under `runtime/uploads/` and are available to the question engine without a server restart. The first question after a source change loads an index for the current source list.
+
+Under **Source documents**, select **Remove** to exclude an included or uploaded PDF from answers and source links. Select **Restore** to use it again. The file stays on disk and the removal survives a server restart.
+
+The server is local to the computer. Uploaded PDFs appear in the assistant's source list. To replace the admin password, run the password setup command again. Existing sign-ins expire when the password changes.
+
 ## Run on a Mac
 
 Open **Start.command** from the extracted project folder. It indexes the source PDFs, runs a two-document example, evaluates 15 labeled questions and opens terminal chat. At **You>**, type your own question. Type **/exit** to finish. Opening through a ZIP preview puts history in a temporary directory.

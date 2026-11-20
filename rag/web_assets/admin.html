@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document admin · Campus Policy Assistant</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/admin.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <div class="bar-inner">
+            <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">CP</span><strong>Campus Policy Assistant</strong></a>
+            <a class="top-link" href="/">Back to assistant</a>
+        </div>
+    </header>
+    <main class="layout admin-layout">
+        <div class="admin-header">
+            <h1>Document admin</h1>
+            <button class="example" id="sign-out" type="button" hidden>Sign out</button>
+        </div>
+        <p id="admin-status" class="status" role="status">Loading admin console…</p>
+        <section id="setup" class="admin-card" hidden>
+            <h2>Set your admin password</h2>
+            <p>Run this in the project terminal and enter a password of at least 12 characters when prompted.</p>
+            <pre><code>./StartWeb.command --set-admin-password</code></pre>
+            <button type="button" class="primary" id="check-setup">Continue to sign in</button>
+        </section>
+        <form id="sign-in" class="admin-card" method="post" hidden>
+            <h2>Admin sign in</h2>
+            <label for="username">Username</label>
+            <input id="username" name="username" value="admin" autocomplete="username" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required maxlength="256">
+            <button type="submit" class="primary">Sign in</button>
+        </form>
+        <div id="dashboard" class="admin-dashboard" hidden>
+            <form id="upload" class="admin-card">
+                <h2>Upload policy PDFs</h2>
+                <p>Choose one or more readable PDFs. Uploaded documents become sources for the next question.</p>
+                <label for="files">PDF files</label>
+                <input type="file" id="files" name="files" accept="application/pdf,.pdf" multiple required aria-describedby="file-help">
+                <p id="file-help" class="muted">Up to 20 MB and 300 pages per file. Scanned documents need searchable text.</p>
+                <button type="submit" class="primary">Upload PDFs</button>
+                <ul id="upload-results" class="upload-results" aria-live="polite"></ul>
+            </form>
+            <section class="admin-card">
+                <h2>Source documents</h2>
+                <ul id="admin-documents" class="admin-documents"></ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
