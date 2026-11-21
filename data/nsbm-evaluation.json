@@ -1,0 +1,283 @@
+[
+  {
+    "id": "N01",
+    "question": "Is a mobile phone permitted in the examination room?",
+    "expected_answer": "The examination regulations prohibit phones and other communication devices inside the room.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 3,
+        "phrase": "communication device"
+      }
+    ],
+    "required_facts": [
+      [
+        "communication device"
+      ],
+      [
+        "not permitted"
+      ]
+    ]
+  },
+  {
+    "id": "N02",
+    "question": "How should I attract the attention of an invigilator?",
+    "expected_answer": "Raise your hand.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 4,
+        "phrase": "raising hand"
+      }
+    ],
+    "required_facts": [
+      [
+        "raising hand"
+      ]
+    ]
+  },
+  {
+    "id": "N03",
+    "question": "Where must I enter my index number?",
+    "expected_answer": "Put it on the answer book and every continuation paper.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 4,
+        "phrase": "every continuation paper"
+      }
+    ],
+    "required_facts": [
+      [
+        "answer book"
+      ],
+      [
+        "every continuation paper"
+      ]
+    ]
+  },
+  {
+    "id": "N04",
+    "question": "What stationery should candidates use during the examination?",
+    "expected_answer": "Use the official stationery supplied for the examination.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 4,
+        "phrase": "official examination stationery"
+      }
+    ],
+    "required_facts": [
+      [
+        "official examination stationery"
+      ]
+    ]
+  },
+  {
+    "id": "N05",
+    "question": "Can candidates smoke in the examination room?",
+    "expected_answer": "Smoking is prohibited inside the examination room.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 5,
+        "phrase": "smoking is not permitted"
+      }
+    ],
+    "required_facts": [
+      [
+        "smoking is not permitted"
+      ]
+    ]
+  },
+  {
+    "id": "N06",
+    "question": "When must I submit my extenuating circumstances claim following the exam date?",
+    "expected_answer": "Submit it within 14 working days of the exam date under the EC guide.",
+    "contexts": [
+      {
+        "document": "extenuating-circumstances.pdf",
+        "page": 2,
+        "phrase": "14 working days following the exam date",
+        "alternatives": [
+          {
+            "document": "extenuating-circumstances.pdf",
+            "page": 3,
+            "phrase": "within 14 working days from the date of examination"
+          }
+        ]
+      }
+    ],
+    "required_facts": [
+      [
+        "14 working days"
+      ]
+    ]
+  },
+  {
+    "id": "N07",
+    "question": "What is the application method for an extenuating circumstances claim?",
+    "expected_answer": "Submit the EC form with evidence supporting the claim.",
+    "contexts": [
+      {
+        "document": "extenuating-circumstances.pdf",
+        "page": 2,
+        "phrase": "submission of the ec form"
+      }
+    ],
+    "required_facts": [
+      [
+        "ec form"
+      ],
+      [
+        "supporting the claim"
+      ]
+    ]
+  },
+  {
+    "id": "N08",
+    "question": "Can extenuating circumstances be used to gain additional marks?",
+    "expected_answer": "A valid claim can grant a fresh exam attempt but cannot award additional marks.",
+    "contexts": [
+      {
+        "document": "extenuating-circumstances.pdf",
+        "page": 2,
+        "phrase": "gain additional marks"
+      }
+    ],
+    "required_facts": [
+      [
+        "fresh attempt"
+      ],
+      [
+        "cannot be used"
+      ]
+    ]
+  },
+  {
+    "id": "N09",
+    "question": "Can I appeal the decision of the EC board?",
+    "expected_answer": "The EC board decision is final and cannot be appealed under the published guide.",
+    "contexts": [
+      {
+        "document": "extenuating-circumstances.pdf",
+        "page": 3,
+        "phrase": "no appeal can be submitted"
+      }
+    ],
+    "required_facts": [
+      [
+        "no appeal"
+      ]
+    ]
+  },
+  {
+    "id": "N10",
+    "question": "How do I register for repeat coursework?",
+    "expected_answer": "Use the repeat registration form and make the required payments to the cashier.",
+    "contexts": [
+      {
+        "document": "repeat-coursework.pdf",
+        "page": 1,
+        "phrase": "repeat registration form"
+      }
+    ],
+    "required_facts": [
+      [
+        "repeat registration form"
+      ],
+      [
+        "cashier"
+      ]
+    ]
+  },
+  {
+    "id": "N11",
+    "question": "How do I find the relevant repeat assignment by module code?",
+    "expected_answer": "Select the relevant faculty, degree, year and semester. Search by the module code or name.",
+    "contexts": [
+      {
+        "document": "repeat-coursework.pdf",
+        "page": 3,
+        "phrase": "use the module code or name"
+      }
+    ],
+    "required_facts": [
+      [
+        "module code or name"
+      ]
+    ]
+  },
+  {
+    "id": "N12",
+    "question": "What receipt number should I enter when submitting my repeat assignment?",
+    "expected_answer": "After paying the relevant fee, enter the receipt number in the repeat assignment form.",
+    "contexts": [
+      {
+        "document": "repeat-coursework.pdf",
+        "page": 4,
+        "phrase": "receipt number should be entered"
+      }
+    ],
+    "required_facts": [
+      [
+        "receipt number"
+      ],
+      [
+        "submission form"
+      ]
+    ]
+  },
+  {
+    "id": "N13",
+    "question": "Is a mobile phone permitted in the examination room? How do I register for repeat coursework?",
+    "expected_answer": "Phones and communication devices are prohibited in the examination room. Register using the repeat registration form and pay the cashier.",
+    "contexts": [
+      {
+        "document": "exam-regulations.pdf",
+        "page": 3,
+        "phrase": "communication device"
+      },
+      {
+        "document": "repeat-coursework.pdf",
+        "page": 1,
+        "phrase": "repeat registration form"
+      }
+    ],
+    "required_facts": [
+      [
+        "not permitted"
+      ],
+      [
+        "repeat registration form"
+      ],
+      [
+        "cashier"
+      ]
+    ]
+  },
+  {
+    "id": "N14",
+    "question": "Where can I buy an annual motorcycle parking pass?",
+    "expected_answer": "The indexed documents do not cover motorcycle parking passes.",
+    "contexts": [],
+    "required_facts": []
+  },
+  {
+    "id": "N15",
+    "question": "When does the repeat assignment need to be submitted after downloading the coursework?",
+    "expected_answer": "Submit it by day 14 after downloading the coursework from the portal.",
+    "contexts": [
+      {
+        "document": "repeat-coursework.pdf",
+        "page": 3,
+        "phrase": "14th day"
+      }
+    ],
+    "required_facts": [
+      [
+        "14th day"
+      ]
+    ]
+  }
+]
